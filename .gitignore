@@ -1,0 +1,8 @@
+node_modules/
+_docs/
+client/build
+client/node_modules/
+server/node_modules/
+client/.eslintcache
+oldclient/
+.vscode/
