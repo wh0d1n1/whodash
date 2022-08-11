@@ -7,7 +7,7 @@
     "server": "cd server && cd venv && cd Scripts && activate && cd .. && cd .. && py manage.py runserver",
     "client": "cd client && yarn start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "set NPM_CONFIG_PRODUCTION=true; set NODE_ENV=development; npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "set NPM_CONFIG_PRODUCTION=true; set NODE_ENV=development; yarn install --prefix client && yarn run build --prefix client"
   },
   "author": "Travis Padilla",
   "license": "MIT",
